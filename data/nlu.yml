@@ -49,9 +49,6 @@ nlu:
     - I want to know if you have an author?
     - Do you have a books of this author?
     - Do you know who is the author of this book [Narnia](title)?
-    - 
-
-
 
 - intent: give_title
   examples: |
@@ -66,7 +63,6 @@ nlu:
   examples: |
     - The author is [Stephen King](author)
     - The name of the author is [John Green](author)
-    
 
 - intent: affirm
   examples: |
