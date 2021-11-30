@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.0"
 
 intents:
   - greet
@@ -26,7 +26,7 @@ slots:
     influence_conversation: true
 
   author:
-    type: text    
+    type: text
     mappings:
     - type: from_entity
       entity: author
@@ -62,7 +62,7 @@ responses:
   - text: "The title of the book you're looking for is {title}"
 
   utter_tell_author:
-  - text: "The name of the author you're looking for is {author}"
+  - text: "el autor que buscas es {author}"
 
 session_config:
   session_expiration_time: 60

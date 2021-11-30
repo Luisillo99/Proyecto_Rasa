@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.0"
 
 nlu:
 - intent: greet
@@ -48,7 +48,11 @@ nlu:
   examples: |
     - I want to know if you have an author?
     - Do you have a books of this author?
-    - Do you know who is the author of this book [Narnia](title)?
+    - Do you have stock of books from [J. K. Rowling](author)
+    - Which books do you have from [Juan Vera](author)?
+    - i wanna know if you have books from [j. j. benitez](author)
+    - what kind of books you have of [gabriel garcia marquez](author)
+
 
 - intent: give_title
   examples: |
@@ -63,6 +67,10 @@ nlu:
   examples: |
     - The author is [Stephen King](author)
     - The name of the author is [John Green](author)
+    - is [Stephen King](author)
+    - oh, the name is [John Green](author)
+    - [Gabriel Garcia Marquez](author)
+    
 
 - intent: affirm
   examples: |
@@ -123,5 +131,3 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-
-    hola

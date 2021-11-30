@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.0"
 
 stories:
 
@@ -55,3 +55,13 @@ stories:
   - action: utter_get_author
   - intent: give_author
   - action: utter_tell_author
+
+- story: Asking for an author Given
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_for_author
+  - slot_was_set:
+    - author: Author
+  - action: utter_tell_author
+  
