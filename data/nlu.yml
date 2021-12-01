@@ -1,69 +1,65 @@
 version: "3.0"
 
 nlu:
-- intent: greet
+- intent: saludar
   examples: |
-    - what's up?
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - hola
+    - holis
+    - Hola!
+    - Buenos días
+    - buenas tardes
+    - Buenas noches
+    - Qué tal?
+    - que pasa
+    - Hola, qué tal
+    - que hubo?
 
-- intent: goodbye
+- intent: despedirse
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - Adiós
+    - Hasta pronto
+    - Gracias, adios
+    - Nos vemos
+    - Chido
+    - Bye
+    - by
 
-- intent: ask_for_stock
+- intent: preguntar_por_stock
   examples: |
-    - I want to know if you have a book?
-    - I am looking for a book
-    - i'm interested in a book
-    - Can you tell me if you have a book?
-    - Do you have the book called [Narnia](title)?
-    - Is [Harry Potter and the philospher stone](title) in stock?
-    - do you have [Sapiens](title)?
-    - the title of the book I'm looking for is [Don Quijote](title)
-    - Do you have the book [Eat, pray, love](title)
+    - Quisiera saber si tienes el libro que estoy buscando
+    - Estoy buscando un libro
+    - Me puedes decir si manejas un libro?
+    - Quiero saber si tienes un libro en existencia
+    - Me gustaría saber si tienes el libro que busco
+    - Estoy interesado en un libro 
+    - Tienes el libro [Narnia](titulo)?
+    - Estoy buscando el libro [Sapiens](titulo)
+    - Quisiera saber si tienes [Harry Potter and the philospher stone](titulo)?
+    - Tienes en existencia el libro [Eat, pray, love](titulo)
+    - Me puedes decir si tienes el libro [100 años de soledad](titulo)
 
-- intent: ask_for_author
+- intent: preguntar_por_autor
   examples: |
-    - I want to know if you have an author?
-    - Do you have a books of this author?
-    - Do you have stock of books from [J. K. Rowling](author)
-    - Which books do you have from [Juan Vera](author)?
-    - i wanna know if you have books from [j. j. benitez](author)
-    - what kind of books you have of [gabriel garcia marquez](author)
+    - Quisiera saber que libros tienes de un autor
+    - Me podrías decir si tienes el libro de un autor que busco?
+    - Estoy buscando libros de un autor, me podrías dar información?
+    - Tienes los libros de un autor?
+    - Tienes stock de libros de [J. K. Rowling](autor)
+    - Que libros tienes de [gabriel garcia marquez](author)
+    - Me puedes decir si tienes libros de [j. j. benitez](autor)
+    - tienes algún libro de [Juan Vera](autor)?
 
-
-- intent: give_title
+- intent: dar_titulo
   examples: |
-    - The title of the book is [A little life](title)
-    - [bad blood](title)
-    - Is [Priestdaddy](title)
-    - The name of the book is [coraline](title)
-    - The title is [Eat, pray, love](title)
-    - the book is [the book thief](title)
+    - El título del libro es [A little life](titulo)
+    - [the book thief](titulo)
+    - [El psicoanalista](titulo)
+    - Es [Priestdaddy](titulo)
+    - El libro se llama [la guerra de los mundos](titulo)
+    - El nombre del libro es [coraline](titulo)
+    - El libro es [el universo en una cáscara de nuez](titulo)
 
-- intent: give_author
+- intent: dar_autor
   examples: |
     - The author is [Stephen King](author)
     - The name of the author is [John Green](author)

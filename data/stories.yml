@@ -4,15 +4,15 @@ stories:
 
 - story: happy path
   steps:
-  - intent: greet
-  - action: utter_greet
+  - intent: saludar
+  - action: utter_saludar
   - intent: mood_great
   - action: utter_happy
 
 - story: sad path 1
   steps:
-  - intent: greet
-  - action: utter_greet
+  - intent: saludar
+  - action: utter_saludar
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
@@ -21,8 +21,8 @@ stories:
 
 - story: sad path 2
   steps:
-  - intent: greet
-  - action: utter_greet
+  - intent: saludar
+  - action: utter_saludar
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
@@ -31,37 +31,37 @@ stories:
 
 - story: Asking for a certain book, title NOT given
   steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: ask_for_stock
-  - action: utter_get_title
-  - intent: give_title
-  - action: utter_tell_title
+  - intent: saludar
+  - action: utter_saludar
+  - intent: preguntar_por_stock
+  - action: utter_pedir_titulo
+  - intent: dar_titulo
+  - action: utter_decir_titulo
 
 - story: Asking for a certain book, title given
   steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: ask_for_stock
+  - intent: saludar
+  - action: utter_saludar
+  - intent: preguntar_por_stock
   - slot_was_set:
-    - title: Book
-  - action: utter_tell_title
+    - titulo: Libro
+  - action: utter_decir_titulo
 
 - story: Asking for an author NOT given
   steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: ask_for_author
-  - action: utter_get_author
-  - intent: give_author
-  - action: utter_tell_author
+  - intent: saludar
+  - action: utter_saludar
+  - intent: preguntar_por_autor
+  - action: utter_pedir_autor
+  - intent: dar_autor
+  - action: utter_decir_autor
 
 - story: Asking for an author Given
   steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: ask_for_author
+  - intent: saludar
+  - action: utter_saludar
+  - intent: preguntar_por_autor
   - slot_was_set:
-    - author: Author
-  - action: utter_tell_author
+    - autor: Autor
+  - action: utter_decir_autor
   
